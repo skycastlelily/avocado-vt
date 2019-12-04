@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Step file creator/editor.
 
@@ -1377,8 +1376,12 @@ class StepEditor(StepMakerWindow):
         fileobj.close()
 
 
-if __name__ == "__main__":
+def main():
     se = StepEditor()
     if len(sys.argv) > 1:
         se.set_steps_file(sys.argv[1])
     gtk.main()
+
+
+if __name__ == "__main__":
+    main()
